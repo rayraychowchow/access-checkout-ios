@@ -20,6 +20,10 @@ public final class AccessCheckoutUITextField: UIView {
     
     internal lazy var uiTextField = buildTextField()
     
+    public func setTextFromFlutter(_ text: String) {
+        uiTextField.text = text
+    }
+    
     private func buildTextField() -> UITextField {
         return self.buildTextFieldWithDefaults(textField: UITextField())
     }
